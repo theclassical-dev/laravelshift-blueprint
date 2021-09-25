@@ -1,0 +1,6 @@
+models:
+    Employee: { name: 'string:100', identification: 'string:100', birth: datetime, salary: integer, martial_status: 'enum:single,married,divorced', bonus: 'decimal:8,2 nullable', order: 'unsignedinteger default:1 index', department_id: 'id foreign:departments.id', relationships: { belongsToMany: Project, hasOne: ContactInfo } }
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    Department: { name: 'string:100', relationships: { hasMany: Employee } }
+    Project: { name: 'string:100', relationships: { belongsToMany: Employee } }
+    ContactInfo: { phone: 'string:100', address: 'string:100', email: 'string:100', relationships: { belongsTo: Employee } }
