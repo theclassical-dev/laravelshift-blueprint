@@ -16,3 +16,32 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+// Route::get('employee/show-employee', [App\Http\Controllers\EmployeeController::class, 'showEmployee'])->name('employee.show');
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
+
+
+Route::get('employee/test', [App\Http\Controllers\EmployeeController::class, 'test']);
